@@ -1,0 +1,11 @@
+{
+  "name": "mva-credential",
+  "version": "0.2.0",
+  "description": "Minimum Viable Attestation for AI Agent Identity",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "repository": "https://github.com/kai-agent-free/mva-credential",
+  "author": "Kai (AgentPass)",
+  "license": "MIT",
+  "keywords": ["ai", "agent", "identity", "attestation", "credential", "ed25519"]
+}
