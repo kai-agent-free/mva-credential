@@ -55,6 +55,14 @@ export interface DelegationProof {
  * Canonical signing payload — sorted keys, no whitespace
  * This is what gets signed by passport_sig
  */
+/**
+ * Canonical signing payload — sorted keys, no whitespace
+ * This is what gets signed by passport_sig
+ * 
+ * RULE: No float-typed fields in signing payload.
+ * Floats cause cross-runtime divergence (same value → different string → different hash).
+ * Use string representations for any decimal values.
+ */
 export interface SigningPayload {
   agent_id: string;
   task_hash: string;
